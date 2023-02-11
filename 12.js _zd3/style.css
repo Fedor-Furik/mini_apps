@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contain{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    
+}
+
+body{
+    background-color: rgb(255, 255, 255); 
+}
+p{
+    margin: 20px;
+    font-size: 100px;
+}
+.hor{
+     color: red;
+}
+.min{
+   color: green;
+}
+.sec{
+    color: blue;
+}
