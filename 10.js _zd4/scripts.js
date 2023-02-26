@@ -1,18 +1,29 @@
+let input = document.querySelector('input')
+let form = document.querySelector('form')
+let ul = document.querySelector('ul')
 
-document.body.querySelector('button').addEventListener('click', () => {
-    let div = document.createElement('div')
-    document.body.querySelector('main').appendChild(div)
-    let p = document.createElement('p')
-    let but = document.createElement('button')
-    but.innerText = 'delete'
-    but.className = `del ${document.querySelector('input').value}`
-    p.className = `del ${document.querySelector('input').value}`
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let chekBox = document.createElement('input');
+    let li = document.createElement('li');
+    let but = document.createElement('button');
+    li.innerText = input.value;
+    chekBox.type = 'checkbox';
+    li.prepend(chekBox);
+    chekBox.addEventListener('click', () => {
+        if(chekBox.checked) {
+          ul.appendChild(li)
+          li.style.textDecoration = 'line-through'
+        } else {
+            li.style.textDecoration = 'none'
+            ul.prepend(li)
+        }
+      }) 
+    but.innerText = 'delete';
+    li.appendChild(but);
     but.addEventListener('click', () => {
-        but.remove()
-        p.remove()
-    })
-    p.innerText = document.querySelector('input').value
-    document.querySelector('input').value = ''
-    document.body.querySelector('div').appendChild(p)
-    document.body.querySelector('div').appendChild(but)
+        li.remove()
+    });
+    input.value = '';
+    ul.appendChild(li);
 })
