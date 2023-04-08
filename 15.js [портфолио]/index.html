@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div id="player" class="player">
+      <ul class="play-list">
+        <div id="aud0" class="audio"><button id="mus1" class="stop-play"><img class="ng" id="ng0" src="assets/img/free-icon-video-player-907805.png" alt=""></button><h1>Aqua Caelestis</h1></div>
+        <div id="aud1" class="audio"><button id="mus2" class="stop-play"><img class="ng" id="ng1" src="assets/img/free-icon-video-player-907805.png" alt=""></button><h1>Ennio Morricone</h1></div>
+        <div id="aud2" class="audio"><button id="mus3" class="stop-play"><img class="ng" id="ng2" src="assets/img/free-icon-video-player-907805.png" alt=""></button><h1>River Flows In You</h1></div>
+        <div id="aud3" class="audio"><button id="mus4" class="stop-play"><img class="ng" id="ng3" src="assets/img/free-icon-video-player-907805.png" alt=""></button><h1>Summer Wind</h1></div>
+      </ul><audio src=""></audio>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i id="iconWz" class="weather-icon owf"></i>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button id="slid1" class="slide-prev slider-icon"></button>
+      <button id="slid2" class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" value="[Enter name]" >
+    </div>
+  </main>
+  <footer class="footer">
+    <button id="changQue" class="change-quote"></button>
+    <div>
+      <div id="txt" class="quote"></div>
+      <div id="autor" class="author"></div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
